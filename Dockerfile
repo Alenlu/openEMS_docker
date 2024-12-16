@@ -31,7 +31,7 @@ WORKDIR /app
 ## Start installation
 RUN git clone --recursive https://github.com/thliebig/openEMS-Project.git
 WORKDIR /app/openEMS-Project
-RUN ./update_openEMS.sh ~/opt/openEMS --with-hyp2mat --with-CTB --python
+RUN ./update_openEMS.sh /usr/local --with-hyp2mat --with-CTB --python
 
 # Set the working directory inside the container
 WORKDIR /app

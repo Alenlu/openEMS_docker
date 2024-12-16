@@ -19,7 +19,7 @@ RUN apt-get install -y gengetopt help2man groff pod2pdf bison flex libhpdf-dev l
 ## Install python
 RUN apt install -y python3.11
 RUN apt install -y python3-pip
-RUN pip install numpy matplotlib Cython pyproject-toml
+RUN pip install scipy numpy matplotlib Cython pyproject-toml
 RUN pip install --upgrade pip wheel
 RUN pip install setuptools==58.2.0
 
